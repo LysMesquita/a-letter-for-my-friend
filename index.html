@@ -1,0 +1,124 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Feliz aniversário Tchaina!!</title>
+
+  <style>
+    :root {
+      --bg: #0f1724;
+      --accent: #ff8fb1;
+      --papel: #fff8ee;
+      --sombra: rgba(2,6,23,0.6);
+      /* este código foi desenvolvido, a principio, para Eduarda M.A. Campos. Oi bonitinha, amo você. Até então, ele foi modificado para envio a uma amiga, Thaina. Ambos recados com carinho, sem sobrepor ninguém, apenas frisando o que veio antes x depois. Obrigado */
+    }
+
+    html, body {
+      margin: 0;
+      padding: 0;
+      height: 100%;
+      overflow: hidden; /* tira o scroll */
+      font-family: Inter, system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial;
+      background: radial-gradient(1200px 600px at 10% 10%, rgba(255,150,180,0.06), transparent 6%),
+                  linear-gradient(180deg, #072707 0%, #072711 50%, #0f2412 100%);
+      color: #fff;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+
+    .cena {
+      max-width: 480px;
+      width: 90%;
+      height: auto;
+      background: linear-gradient(180deg, var(--papel) 0%, #fff0e6 100%);
+      border-radius: 12px;
+      box-shadow: 0 30px 60px rgba(2,6,23,0.45);
+      padding: 30px 24px;
+      color: #37241f;
+      text-align: center;
+      position: relative;
+      z-index: 2;
+    }
+
+    .metadados {
+      font-size: 14px;
+      margin-bottom: 16px;
+      opacity: 0.85;
+    }
+
+    .titulo {
+      font-family: "Times New Roman", Times, serif;
+      font-size: 22px;
+      margin-bottom: 20px;
+    }
+
+    .mensagem {
+      font-family: "Times New Roman", Times, serif;
+      font-size: 16px;
+      line-height: 1.4;
+      color: #3a2d28;
+      white-space: pre-line;
+    }
+
+    .brilhos {
+      position: absolute;
+      inset: -20% -20% auto -20%;
+      pointer-events: none;
+      z-index: 0;
+    }
+
+    .brilhos span {
+      position: absolute;
+      display: block;
+      width: 8px; height: 8px;
+      background: radial-gradient(circle at 30% 30%, rgba(255,255,255,0.95), transparent 50%);
+      opacity: 0.9;
+      transform: rotate(25deg);
+      filter: blur(0.5px);
+      animation: flutuante 4000ms linear infinite;
+    }
+
+    @keyframes flutuante {
+      0% { transform: translateY(0) scale(1); opacity:0.95; }
+      50%{ transform: translateY(-14px) scale(1.08); opacity:0.6; }
+      100%{ transform: translateY(0) scale(1); opacity:0.95; }
+    }
+  </style>
+</head>
+<body>
+  <div class="cena" role="document" aria-label="Carta de aniversário">
+    <div class="metadados">
+      Feliz aniversário, sapatona sz. Último ano na casa dos 1X (aquela amg que pesa o clima)
+    </div>
+
+    <h2 class="titulo">Para: Tchaina</h2>
+
+    <div class="mensagem">
+      Tchaina,
+
+      Iai lek, novamente um feliz aniversário.
+      Não sou bom com textinhos mas lá vai... você é alguém incrível, merece tudo que conquistou e ainda mais, msm com td o passado não me arrependo de nada, foi necessário e obg por isso. Obrigado por tudo, por ser você. Desejo tudo de bom pra ti sempre, fica bem.
+
+      Com carinho,
+      Lyss
+    </div>
+  </div>
+
+  <div class="brilhos" aria-hidden="true">
+    <span style="left:6%; top:12%; animation-delay:0s;"></span>
+    <span style="left:86%; top:8%; animation-delay:.8s; width:6px;height:6px;"></span>
+    <span style="left:40%; top:2%; animation-delay:1.2s; width:10px;height:10px;"></span>
+    <span style="left:12%; top:55%; animation-delay:.4s; width:7px;height:7px;"></span>
+    <span style="left:74%; top:66%; animation-delay:1.8s; width:6px;height:6px;"></span>
+  </div>
+
+  <script>
+    // Pop-up automático com recado (sem input)
+    window.addEventListener('DOMContentLoaded', () => {
+      alert("Feliz aniversário, bicha! Você é uma amiga sensacional");
+    });
+  </script>
+</body>
+</html>
